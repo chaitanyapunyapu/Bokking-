@@ -79,7 +79,7 @@ curl http://localhost:8000/classes/?tz=America/New_York
     "id": 1,
     "name": "Morning Yoga",
     "datetime": "2025-06-10T09:00:00-04:00",
-    "instructor": "Alice",
+    "instructor": "Alexa",
     "available_slots": 10
   },
   ...
@@ -95,8 +95,8 @@ Book a spot in a class.
 ```json
 {
   "class_id": 1,
-  "client_name": "John Doe",
-  "client_email": "john@example.com"
+  "client_name": "John wick",
+  "client_email": "john@xyz.com"
 }
 ```
 
@@ -105,7 +105,7 @@ Book a spot in a class.
 ```bash
 curl -X POST http://localhost:8000/book/ \
      -H "Content-Type: application/json" \
-     -d '{"class_id": 1, "client_name": "John Doe", "client_email": "john@example.com"}'
+     -d '{"class_id": 1, "client_name": "John wick", "client_email": "john@xyz.com"}'
 ```
 
 ### 3. `GET /bookings/?email=<client_email>`
@@ -115,7 +115,7 @@ Get all bookings for a specific client.
 **Example:**
 
 ```bash
-curl http://localhost:8000/bookings/?email=john@example.com
+curl http://localhost:8000/bookings/?email=john@xyz.com
 ```
 
 **Response:**
@@ -125,8 +125,8 @@ curl http://localhost:8000/bookings/?email=john@example.com
   {
     "id": 5,
     "fitness_class": 1,
-    "client_name": "John Doe",
-    "client_email": "john@example.com",
+    "client_name": "John wick",
+    "client_email": "john@xyz.com",
     "booked_at": "2025-06-07T12:00:00Z"
   },
   ...
@@ -145,7 +145,7 @@ curl http://localhost:8000/bookings/?email=john@example.com
 * Source code
 * Sample seed data (`classes.json`)
 * README.md (this file)
-* Loom video walkthrough (to be submitted by the developer)
+* Loom video walkthrough (to be submitted by Chaitanya)
 
 ---
 
