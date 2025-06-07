@@ -1,0 +1,32 @@
+[
+    {
+        "model":"studio.class",
+        "pk":1,
+        "fields":{
+            "name":"Morning Yoga",
+            "datetime":"2025-06-08T06:30:00+05:30",
+            "instructor":"John cena",
+            "available_slots":10
+        }
+    },
+    {
+        "model":"studio.class",
+        "pk":2,
+        "fields":{
+            "name":"Evening Zumba",
+            "datetime":"2025-06-08T18:00:00+05:30",
+            "instructor":"Reigns",
+            "available_slots":8
+        }
+    },
+    {
+        "model":"studio.class",
+        "pk":3,
+        "fields":{
+            "name":"HIIT Blast",
+            "datetime":"2025-06-08T07:00:00+05:30",
+            "instructor":"chris",
+            "available_slots":12
+        }
+    }
+]
