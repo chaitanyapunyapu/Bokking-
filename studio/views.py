@@ -25,6 +25,7 @@ class ClassList(APIView):
         
         classes = Class.objects.filter(datetime__gte=now)
         result = []
+        print('results :', result)
         for cls in classes:
             local_dt = cls.datetime.astimezone(user_tz)
             result.append({
@@ -34,7 +35,7 @@ class ClassList(APIView):
                 "instructor":cls.instructor,
                 "available_slots":cls.available_slots
             })
-            return Response(result)
+        return Response(result)
         
 class BookView(APIView):
     def post(self, request):
